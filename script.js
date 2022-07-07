@@ -2,7 +2,7 @@ let list = document.querySelectorAll('a')
 let selectNum = document.getElementById('select-num')
 let submit = document.querySelector('.submit');
 let ratingBox = document.querySelector('.rating-box')
-let thanyouBox = document.querySelector('.thank-you-box')
+let thankyouBox = document.querySelector('.thank-you-box')
 
 list.forEach((item) => {
     item.addEventListener('click', (e) => {
@@ -14,7 +14,7 @@ list.forEach((item) => {
 function submitHandler() {
     submit.addEventListener('click', function () {
         ratingBox.classList.add('hide');
-        thanyouBox.classList.add('show')
+        thankyouBox.classList.add('show')
     });
 }
 
